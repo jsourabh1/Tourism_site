@@ -15,6 +15,7 @@
 <body>
     <header>
         <div class="Header_section">
+            <div id="menu-bar" class="fas fa-bars"></div>
 
             <div class="logo">Travel</div>
                 <nav class="nav_section">
@@ -30,34 +31,36 @@
         
                 </nav>
 
-                <i id="account-icon" class="fas fa-user-alt"></i>
+                <i id="account_icon" class="fas fa-user-alt"></i>
 
         </div>
     </header>
 
     <div class="login_form">
+        <i class="far fa-times-circle" id="close_form"></i>
 
         <form action="">
 
             <h3>login</h3>
             <input type="email" class="box"  placeholder="Enter the email" required>
-            <input type="password" class="box" placeholder="Enter the Password" required>
+            <input type="password" class="box" id="password" placeholder="Enter the Password" required>
+            
+            <!-- change the change_visibility  of the password-->
 
+           <p id="visibility"> <input type="checkbox"   onclick="change_visibility()">show Password</p>
+            
             <input type="submit" class="login" value="Login Now">
-            <input type="checkbox" id="remember me">
-            <label for="remember me">Remember me </label>
-            <p>Forgot password ?<a href="#">Click here</a></p>
-            <p>Don't have account ? <a href="#">Create account</a></p>
+            <p id="Remember"><input type="checkbox">Remember Me</p>
+            
+            <p class="fun">Forgot password ?<a href="#">Click here</a></p>
+            <p class="fun">Don't have account ? <a href="#">Create account</a></p>
        </form>
-    
-    
-    
-    
-    
     
     </div>
 
 
     
 </body>
+
+<script href="index.js"></script>
 </html>
