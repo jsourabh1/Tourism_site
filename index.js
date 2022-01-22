@@ -18,16 +18,21 @@ let loginform = document.querySelector(".login_form");
 let menu_bar=document.querySelector("#menu-bar");
 let nav_section=document.querySelector(".nav_section")
 
-var count=0
-menu_bar.addEventListener("click", () => {
-    if (count%2===0){
-    nav_section.classList.add("active");
-    }
+// var count=0
+// menu_bar.addEventListener("click", () => {
+//     if (count%2===0){
+//     nav_section.classList.add("active");
+//     }
     
-    else {
-        nav_section.classList.remove("active");
-    }
-    count+=1
+//     else {
+//         nav_section.classList.remove("active");
+//     }
+//     count+=1
+// });
+menu_bar.addEventListener("click", () => {
+    menu_bar.classList.toggle("fa-times")
+    nav_section.classList.toggle("active");
+
 });
 
 formbtn.addEventListener("click", () => {
