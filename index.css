@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
     /* it declares the global variable across the css sheet */
@@ -43,7 +43,7 @@ html{
 .Header_section{
     position: fixed;
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
     height: 10vh;
     width: 100vw;
@@ -75,22 +75,26 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 55vw;
+    width: 65vw;
     /* padding-right: 10rem; */
     /* background-color: violet; */
     font-weight: 300;
     font-size: 2rem;
 }
+
+#account_icon{
+
+    font-size: 2rem;
+    padding-left: 8rem;
+    color: wheat;
+}
+#account_icon:hover{
+    cursor:pointer;
+}
+
 .nav_section a{
     color: rgb(255, 255, 255);
 }
-#account-icon{
-
-    font-size: 2rem;
-    padding-right: 6rem;
-    color: wheat;
-}
-
 .nav_section a:hover{
     color: rgb(221, 186, 109);
 }
@@ -100,12 +104,18 @@ html{
     min-height: 100vh;
     left:0;
     right: 0;
+    top: -120%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:column;
     background: rgba(53, 48, 44, 0.7);
+    /* filter: drop-shadow(0.1rem 0.1rem 0.6rem  rgb(219, 9, 9)); */
+}
+
+.login_form.active{
+    top: 0;
 }
 
 .login_form form{
@@ -139,5 +149,170 @@ html{
 
 .login_form form .box{
 
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin: 0.6rem 0;
+    padding: 0.5rem ;
+    border: 0.1rem solid black;
+    color: rgb(57, 60, 65);
+    font-family: 'Dongle', sans-serif;
+
 }
+.login_form form #visibility
+{
+    display: flex;
+    /* justify-content:space-around/ */
+    /* padding-left: 1rem; */
+    column-gap: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.06rem;
+
+
+}
+.login_form form .login{
+
+    padding: 1rem;
+    margin: 1rem;
+    background: rgb(39, 41, 38);
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.09rem;
+
+}
+.login_form form .login:hover{
+    background: chocolate;
+    cursor: pointer;
+}
+.login_form form #Remember{
+    column-gap: 1rem;
+    display: flex;
+    margin: 0.3rem;
+    font-size:1.3rem ;
+    letter-spacing: 0.06rem;
+
+}
+
+.login_form form .fun {
+    display: flex;
+    margin-top: 1rem;
+    /* background: chocolat */
+    font-size: 1.4rem;
+    /* color: black; */
+    letter-spacing: 0.06rem;
+
+
+}
+.login_form form .fun a{
+    color: rgb(9, 36, 241);
+    margin-left: 0.2rem;
+    letter-spacing: 0.06rem;
+}
+
+.login_form .far{
+
+    position: absolute;
+    top:10rem ;
+    right: 30rem;
+    font-size: 5rem;
+}
+
+.login_form .far:hover{
+    color:rgba(241, 43, 43, 0.885);
+    cursor: pointer;
+
+}
+
+
+#menu-bar{
+
+    font-size:3rem ;
+    color: white;
+    padding-left: 3rem;
+    cursor: pointer;
+    display: none;
+    /* border-radius: 1rem; */
+    /* border: 1rem solid; */
+
+}
+
+
+
+
+/* media queries */
+
+@media (max-width: 1200px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:1000px)
+{
+    .logo{
+        padding-left: 1rem;
+    }
+    #account_icon{
+        padding-left: 5rem;
+    }
+    
+}
+
+@media (max-width:700px)
+{
+    #menu-bar{
+        display: initial;
+        padding-right:0.6rem ;
+    }
+    .nav_section{
+        top: 100%;
+        position: absolute;
+        display: block;
+        right: 0;
+        left:0;
+        width: 100vw;
+        background: rgb(45, 46, 43);
+        border-top: 0.1rem solid blue;
+        /* padding: 1rem; */
+    }   
+
+    .nav_section a{
+        display: block;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem 1rem;
+        background: rgb(39, 39, 39);
+        box-shadow: 0 0.5rem 1rem black;
+
+    }
+    
+    /* #account_icon{
+        /* background: lemonchiffon; */
+        /* text-align: right; */
+        /* padding-left: 10rem;
+    }  */
+
+    .Header_section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    .login_form #close_form{
+        left:50rem;
+    } 
+}
+@media (max-width: 370px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
