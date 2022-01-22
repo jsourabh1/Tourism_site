@@ -47,7 +47,7 @@ html{
     align-items: center;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(22, 20, 20, 1);
+    /* background-color: rgba(22, 20, 20, 1); */
     box-shadow: 0 0 1.2rem blue;
     /* color: rgb(241, 205, 125); */
 
@@ -113,6 +113,7 @@ html{
     align-items: center;
     flex-direction:column;
     background: rgba(53, 48, 44, 0.7);
+    z-index: 100;
     /* filter: drop-shadow(0.1rem 0.1rem 0.6rem  rgb(219, 9, 9)); */
 }
 
@@ -250,7 +251,7 @@ html{
     }
 }
 
-@media (max-width:1000px)
+@media (max-width:960px)
 {
     .logo{
         padding-left: 1rem;
@@ -313,19 +314,27 @@ html{
     
 
 }
-@media (max-width: 370px)
-{
-    html{
-        font-size: 50%;
-    }
-
-    
-}
 @media (max-width:638px) {
 
     .home_section .controls{
         top: 18rem !important;
     }
+    
+}
+
+@media (max-width: 489px)
+{
+    html{
+        font-size: 40%;
+    }
+    .login_form form{
+        width: 30rem;
+
+    }
+    /* .lodin_form .far{
+        right: 10rem;
+    } */
+
     
 }
 
@@ -338,7 +347,7 @@ html{
     /* width: 100vw; */
     height: 100vh;
     /* background: linear-gradient(135deg ,rgb(55, 147, 233),rgb(200, 233, 243)); */
-    
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
