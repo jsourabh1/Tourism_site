@@ -18,7 +18,13 @@ let loginform = document.querySelector(".login_form");
 let menu_bar=document.querySelector("#menu-bar");
 let nav_section=document.querySelector(".nav_section")
 
+
+let videobtn=document.querySelectorAll(".video-btn");
+
+
 // var count=0
+
+// how noob works 
 // menu_bar.addEventListener("click", () => {
 //     if (count%2===0){
 //     nav_section.classList.add("active");
@@ -29,6 +35,9 @@ let nav_section=document.querySelector(".nav_section")
 //     }
 //     count+=1
 // });
+
+
+
 menu_bar.addEventListener("click", () => {
     menu_bar.classList.toggle("fa-times")
     nav_section.classList.toggle("active");
@@ -44,3 +53,16 @@ closeform.addEventListener("click", () => {
     loginform.classList.remove("active");
 });
 
+
+videobtn.forEach(btn => {
+
+    btn.addEventListener("click",()=>{
+        document.querySelector(".controls .active").classList.remove("active");
+        btn.classList.add("active")
+        let temp=btn.getAttribute("data-src")
+        document.querySelector("#video-slider").src=temp;
+
+
+    });
+    
+});
