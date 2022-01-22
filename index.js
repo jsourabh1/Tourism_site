@@ -66,3 +66,6 @@ videobtn.forEach(btn => {
     });
     
 });
+
+
+// book section javascript

@@ -242,6 +242,162 @@ html{
 
 
 
+
+/* home section css */
+
+
+.home_section{
+
+    /* width: 100vw; */
+    height: 100vh;
+    /* background: linear-gradient(135deg ,rgb(55, 147, 233),rgb(200, 233, 243)); */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    /* flex-direction: column; */
+}
+
+.home_section .content{
+    position: absolute;
+    /* background-color: rgb(232, 235, 230); */
+    text-align: center;
+}
+
+.home_section .content h3{
+
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color:rgb(235, 238, 227);
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+    text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
+
+
+}
+.home_section .content h4{
+
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    color:rgb(246, 247, 245);
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+        text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
+
+
+
+}
+.home_section .content p{
+    padding: 1rem;
+}
+.home_section .content a{
+
+    padding: 1rem;
+    margin: 1rem;
+    background: rgb(233, 161, 6);
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.2rem; 
+} 
+.home_section .content a:hover{
+    
+    border: 0.1rem solid rgb(233, 161, 6);
+    /* color: rgb(241, 163, 19); */
+    background: rgba(228, 134, 11, 0.603);
+}
+
+.home_section .video-container video{
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;  
+}
+
+
+.home_section .controls{
+    background:black;
+    border-radius: 4rem;
+    position: relative;
+    top: 15rem;
+    padding: 1rem;
+}
+
+.home_section .controls .video-btn{
+
+
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    border-radius: 40%;
+    background-color: white ;
+}
+
+.home_section .controls .video-btn:hover{
+    background-color: rgb(231, 156, 15);
+
+}
+.home_section .controls .video-btn.active{
+    background-color: rgb(231, 156, 15);
+
+}
+/* universal heading css */
+
+section{
+    padding: 2rem;
+}
+.heading{
+    text-align: center;
+    /* background-color: tomato; */
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.heading span{
+    font-size: 4rem;
+    padding: 0.4rem 1rem;
+    background: rgb(21, 106, 233);
+    border-radius: 0.5rem;
+    /* display: inline-block; */
+    
+}
+.heading .space{
+    background: none;
+}
+
+
+/* universal heading css ends here */
+
+/* book section css */
+
+/* .book_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top,blue,white);
+}
+.book_section .book_image img{
+    
+    width: 20vw;
+    height: 50vh;
+} */
+
+
+
+
+
+
+
+
 /* media queries */
 
 @media (max-width: 1200px)
@@ -331,117 +487,10 @@ html{
         width: 30rem;
 
     }
-    /* .lodin_form .far{
-        right: 10rem;
+
+    /* .heading span{
+        font-size: 2.5rem;
     } */
 
     
-}
-
-
-/* home section css */
-
-
-.home_section{
-
-    /* width: 100vw; */
-    height: 100vh;
-    /* background: linear-gradient(135deg ,rgb(55, 147, 233),rgb(200, 233, 243)); */
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-    /* flex-direction: column; */
-}
-
-.home_section .content{
-    position: fixed;
-    /* background-color: rgb(232, 235, 230); */
-    text-align: center;
-}
-
-.home_section .content h3{
-
-    font-size: 5rem;
-    text-transform: uppercase;
-    padding: 1.5rem;
-    color:rgb(235, 238, 227);
-    letter-spacing: 0.6rem;
-    font-weight: 800;
-    text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
-
-
-}
-.home_section .content h4{
-
-    font-size: 2rem;
-    text-transform: capitalize;
-    padding: 1.5rem;
-    color:rgb(246, 247, 245);
-    letter-spacing: 0.6rem;
-    font-weight: 800;
-        text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
-
-
-
-}
-.home_section .content p{
-    padding: 1rem;
-}
-.home_section .content a{
-
-    padding: 1rem;
-    margin: 1rem;
-    background: rgb(233, 161, 6);
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
-    letter-spacing: 0.2rem; 
-} 
-.home_section .content a:hover{
-    
-    border: 0.1rem solid rgb(233, 161, 6);
-    /* color: rgb(241, 163, 19); */
-    background: rgba(228, 134, 11, 0.603);
-}
-
-.home_section .video-container video{
-    width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;  
-}
-
-
-.home_section .controls{
-    background:black;
-    border-radius: 4rem;
-    position: relative;
-    top: 15rem;
-    padding: 1rem;
-}
-
-.home_section .controls .video-btn{
-
-
-    height: 1.5rem;
-    width: 1.5rem;
-    display: inline-block;
-    border-radius: 40%;
-    background-color: white ;
-}
-
-.home_section .controls .video-btn:hover{
-    background-color: rgb(231, 156, 15);
-
-}
-.home_section .controls .video-btn.active{
-    background-color: rgb(231, 156, 15);
-
 }
