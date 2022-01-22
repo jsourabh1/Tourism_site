@@ -310,12 +310,23 @@ html{
     .login_form #close_form{
         left:50rem;
     } 
+    
+
 }
 @media (max-width: 370px)
 {
     html{
         font-size: 50%;
     }
+
+    
+}
+@media (max-width:638px) {
+
+    .home_section .controls{
+        top: 18rem !important;
+    }
+    
 }
 
 
