@@ -360,6 +360,7 @@ html{
     color:rgb(235, 238, 227);
     letter-spacing: 0.6rem;
     font-weight: 800;
+    text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
 
 
 }
@@ -371,6 +372,8 @@ html{
     color:rgb(246, 247, 245);
     letter-spacing: 0.6rem;
     font-weight: 800;
+        text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
+
 
 
 }
