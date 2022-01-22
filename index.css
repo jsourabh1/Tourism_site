@@ -274,8 +274,13 @@ html{
         width: 100vw;
         background: rgb(45, 46, 43);
         border-top: 0.1rem solid blue;
+        clip-path: polygon(0 0, 100% 0, 10% 0, 0 0);
         /* padding: 1rem; */
     }   
+    .nav_section.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
 
     .nav_section a{
         display: block;
