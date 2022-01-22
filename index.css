@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root {
+    /* it declares the global variable across the css sheet */
+  --main-color: hotpink;
+}
+
+*::selection{
+
+    background-color: coral;
+}
+
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+    text-transform: capitalize;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+
+}
+
+body{
+    background-color: aquamarine;
+    /* height: 200rem; */
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:6rem ;
+
+
+
+}
+
+
+.Header_section{
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #161414;
+    box-shadow: 0 0 1.2rem blue;
+
+}
+.logo::first-letter{
+
+    color: darkgoldenrod;
+}
+
+.logo{
+
+    font-weight: 600;
+    font-size:3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    width: 25vw;
+    /* background-color:wheat ; */
+    height:auto;
+    color: white;
+    padding-left:10rem ;
+
+}
+
+.nav_section{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55vw;
+    /* padding-right: 10rem; */
+    /* background-color: violet; */
+    font-weight: 300;
+    font-size: 2rem;
+}
+.nav_section a{
+    color: rgb(255, 255, 255);
+}
+#account-icon{
+
+    font-size: 2rem;
+    padding-right: 6rem;
+    color: wheat;
+}
+
+.nav_section a:hover{
+    color: rgb(221, 186, 109);
+}
+
+.login_form{
+    position: fixed;
+    min-height: 100vh;
+    left:0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background: rgba(53, 48, 44, 0.7);
+}
+
+.login_form form{
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: column;
+    background: rgb(232, 235, 230);
+    width: 50rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* height: 40rem; */
+
+}
+
+.login_form form h3{
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin: 1rem; */
+    padding: 1rem 1rem;
+    /* background: chartreuse; */
+    color: rgb(45, 48, 43);
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+}
+
+
+.login_form form .box{
+
+    font-size: 3rem;
+}
