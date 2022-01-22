@@ -58,9 +58,9 @@ videobtn.forEach(btn => {
 
     btn.addEventListener("click",()=>{
         document.querySelector(".controls .active").classList.remove("active");
-        btn.classList.add("active")
+        btn.classList.add("active");
         let temp=btn.getAttribute("data-src");
-        document.querySelector("#video-slider");
+        document.querySelector("#video-slider").src = temp;
 
 
     });
