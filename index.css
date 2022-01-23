@@ -50,6 +50,7 @@ html{
     background-color: rgba(22, 20, 20, 0.5);
     box-shadow: 0 0 1.2rem blue;
     /* color: rgb(241, 205, 125); */
+    z-index: 1000;
 
 }
 .logo::first-letter{
@@ -349,6 +350,7 @@ html{
     background-color: rgb(231, 156, 15);
 
 }
+
 /* universal heading css */
 
 section{
@@ -359,11 +361,12 @@ section{
     /* background-color: tomato; */
     text-transform: uppercase;
     padding: 2rem;
+    height: 15vh;
 }
 .heading span{
     font-size: 4rem;
     padding: 0.4rem 1rem;
-    background: rgb(21, 106, 233);
+    background: rgb(226, 183, 43);
     border-radius: 0.5rem;
     /* display: inline-block; */
     
@@ -375,21 +378,121 @@ section{
 
 /* universal heading css ends here */
 
+
 /* book section css */
 
 /* .book_section{
-    width: 100vw;
+    background: linear-gradient(to right top,rgb(8, 117, 189),rgb(204, 152, 55));
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right top,blue,white);
 }
-.book_section .book_image img{
+
+.book_section .row{
+    display: flex;
+    background-color: black;
+    height: 80vh;
+    flex-direction: row;
+    gap:1.5rem;
+  align-items: center;
+}
+
+
+
+.book_section .row .image img{
+  width:40vw;
+  padding: 2rem;
+}
+
+.book_section .row form{
+    background-color: white;
+    width: 30vw;
+    height: auto;
+    padding: 2rem;
+    margin-left: 10rem;
+    border: 0.2rem solid rgb(240, 224, 224);
+    border-radius: 2rem;
+    box-shadow: 0 1rem 5rem rgb(172, 122, 14);
     
-    width: 20vw;
-    height: 50vh;
-} */
+}
+
+.book_section .row form .inputBox h3{
+
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+*/
+
+.book_section .row{
+    display: flex;
+    
+    height: 80vh;
+    flex-direction: row;
+    gap:1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book_section .row .image{
+  flex:1 1 40rem;
+}
+
+.book_section .row .image img{
+  width:100%;
+}
+
+.book_section .row form{
+  flex:1 1 40rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.book_section .row form .inputBox{
+  padding:.5rem 0;
+}
+
+.book_section .row form .inputBox input{
+    width: 100%;
+    border: 0.2rem solid rgb(46, 43, 38);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.book_section .row form .inputBox h3{
+  font-size: 2rem;
+  padding:1rem 0;
+  color:#666;
+}
+
+.book_section .row form .Book{
+    padding: 1rem;
+    margin: 2rem;
+    background: rgb(240, 142, 13);
+    border: 0.1rem solid rgb(240, 142, 13) ;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.09rem;
+    border-radius: 1rem;
+}
+
+.book_section .row form .Book:hover{
+    background: rgba(240, 142, 13, 0.1);
+    color: rgb(240, 142, 13);
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
