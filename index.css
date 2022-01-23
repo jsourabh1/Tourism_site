@@ -676,7 +676,43 @@ section{
     top: 0;
 }
 
+.review_section .swiper-wrapper{
+    padding-bottom: 2rem;
+}
 
+.review_section .swiper-slide{
+
+    padding:1rem;
+    /* height: 25rem; */
+    width: 100%;
+    /* background: black; */
+    text-align: center;
+    
+    box-shadow: 1rem 1rem 1rem rgb(91, 210, 231);
+}
+
+.review_section .swiper-slide img{
+
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.review_section .swiper-slide h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.review_section .swiper-slide p{
+    font-size: 1.7rem;
+    color: rgb(45, 49, 49);
+    margin-bottom: 0.5rem;
+}
+
+.review_section .swiper-slide .stars{
+    font-size: 1.5rem;
+    color: darkorange;
+}
 
 
 
