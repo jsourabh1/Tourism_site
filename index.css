@@ -251,7 +251,7 @@ html{
     /* width: 100vw; */
     height: 100vh;
     /* background: linear-gradient(135deg ,rgb(55, 147, 233),rgb(200, 233, 243)); */
-    z-index: 1;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,14 +278,14 @@ html{
 
 }
 .home_section .content h4{
-
+   
     font-size: 2rem;
     text-transform: capitalize;
     padding: 1.5rem;
     color:rgb(246, 247, 245);
     letter-spacing: 0.6rem;
     font-weight: 800;
-        text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
+    text-shadow: -1px 0 rgb(14, 129, 236), 0 1px rgb(13, 34, 218), 1px 0 rgb(15, 59, 252), 0 -1px rgb(8, 47, 131);
 
 
 
@@ -430,6 +430,7 @@ section{
         display: block;
         right: 0;
         left:0;
+        
         width: 100vw;
         background: rgb(45, 46, 43);
         border-top: 0.1rem solid blue;
@@ -438,6 +439,7 @@ section{
     }   
     .nav_section.active{
        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+       
     }
 
 
@@ -448,6 +450,7 @@ section{
         margin: 1rem 1rem;
         background: rgb(39, 39, 39);
         box-shadow: 0 0.5rem 1rem black;
+        
 
     }
     
