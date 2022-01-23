@@ -382,7 +382,7 @@ section{
 /* book section css */
 
 .book_section{
-    background: linear-gradient(to right top,rgb(8, 117, 189),rgb(204, 152, 55));
+    background: linear-gradient(to right bottom,rgb(8, 117, 189),rgb(204, 152, 55));
     height:108vh;
 }
 
@@ -447,12 +447,97 @@ section{
     color: rgb(240, 142, 13);
 
 }
+.packages{
+        background: linear-gradient(to right top,blue,orange );
+
+}
+.packages .image-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.packages .image-container .image{
+    flex: 1 1 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.7rem 0.6rem rgb(244, 247, 246);
+}
+
+
+.packages .image-container .image img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+}
+
+.packages .image-container .image .content{
+    padding: 2rem;
+}
+.packages .image-container .image .content h3{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.packages .image-container .image .content h3 i{
+    color: orange;
+
+}
+
+.packages .image-container .image .content h3 span{
+    padding-left: 0.8rem;
+    
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+
+}
+
+.packages .image-container .image .content p{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: black;
+    font-weight: 700;
+
+}
+.packages .image-container .image .content .stars i{
+    color: orange;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.packages .image-container .image .content .price{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+.packages .image-container .image .content .price span{
+    font-size: 1.3rem;
+    /* padding-top: 1rem; */
+    text-decoration: line-through;
+}
 
 
 
+.packages .image-container .image .Book{
+    padding: 1rem;
+    margin: 1rem;
+    background: rgb(240, 142, 13);
+    border: 0.1rem solid rgb(240, 142, 13) ;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.09rem;
+    border-radius: 1rem;
+}
 
+.packages .image-container .image .Book:hover{
 
-
+    background: rgba(240, 142, 13, 0.1);
+    color: rgb(240, 142, 13);
+}
 
 
 
@@ -563,3 +648,4 @@ section{
 
     
 }
+
