@@ -381,53 +381,15 @@ section{
 
 /* book section css */
 
-/* .book_section{
+.book_section{
     background: linear-gradient(to right top,rgb(8, 117, 189),rgb(204, 152, 55));
-    height: 100vh;
+    height:108vh;
 }
 
 .book_section .row{
     display: flex;
-    background-color: black;
-    height: 80vh;
-    flex-direction: row;
-    gap:1.5rem;
-  align-items: center;
-}
-
-
-
-.book_section .row .image img{
-  width:40vw;
-  padding: 2rem;
-}
-
-.book_section .row form{
-    background-color: white;
-    width: 30vw;
-    height: auto;
-    padding: 2rem;
-    margin-left: 10rem;
-    border: 0.2rem solid rgb(240, 224, 224);
-    border-radius: 2rem;
-    box-shadow: 0 1rem 5rem rgb(172, 122, 14);
     
-}
-
-.book_section .row form .inputBox h3{
-
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    text-transform: capitalize;
-    font-size: 2rem;
-}
-
-*/
-
-.book_section .row{
-    display: flex;
-    
-    height: 80vh;
+    height: 75vh;
     flex-direction: row;
     gap:1.5rem;
   align-items: center;
