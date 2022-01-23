@@ -426,7 +426,8 @@ section{
 .book_section .row form .inputBox h3{
   font-size: 2rem;
   padding:1rem 0;
-  color:#666;
+  color:rgb(252, 243, 243);
+  letter-spacing: 0.3rem;
 }
 
 .book_section .row form .Book{
