@@ -539,8 +539,62 @@ section{
     color: rgb(240, 142, 13);
 }
 
+.services_section{
+
+    background-image: url(images_and_videos/Travel_4.jpg);
+    /* background-repeat: no-repeat; */
+    /* object-fit: cover;  */
+
+    background-size: 100% 100%;
+}
+.services_section .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
+
+.services_section .services-container .services{
+    flex: 1 1 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services_section .services-container i{
+
+    font-size: 5rem;
+    color: chocolate;
+    margin: 2rem;
+}
+.services_section .services-container .content{
+    
+    text-align: center;
+    padding: 1rem;
+}
 
 
+
+.services_section .services-container .content h3{
+
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;
+    margin: 0 1rem 1rem 1rem ;
+
+}
+.services_section .services-container .content p{
+
+    font-size: 1.7rem;
+    color: darkgray;
+    /* font-weight: bold; */
+
+}
 
 
 
